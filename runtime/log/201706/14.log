@@ -1,0 +1,1648 @@
+[ 2017-06-14T00:13:33+08:00 ] 172.17.180.47 140.205.225.194 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.032904s][吞吐率：30.39req/s] [内存消耗：4,236.45kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'host' => 'www.hhqblog.com',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip,deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000311s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000417s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T00:13:39+08:00 ] 172.17.180.47 140.205.225.194 GET /editors/index.html
+[ log ] www.hhqblog.com/editors/index.html [运行时间：0.012649s][吞吐率：79.06req/s] [内存消耗：1,586.74kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'editors',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'www.hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T00:15:37+08:00 ] 172.17.180.47 140.205.225.194 GET /LICENSE.txt
+[ log ] www.hhqblog.com/LICENSE.txt [运行时间：0.012898s][吞吐率：77.53req/s] [内存消耗：1,586.69kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'LICENSE.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'www.hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T00:15:39+08:00 ] 172.17.180.47 140.205.225.194 GET /extensions/kindeditor/themes/default/default.png)
+[ log ] www.hhqblog.com/extensions/kindeditor/themes/default/default.png) [运行时间：0.012853s][吞吐率：77.80req/s] [内存消耗：1,587.30kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'extensions',
+    1 => 'kindeditor',
+    2 => 'themes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'www.hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'default' => 'default.png)',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T00:43:28+08:00 ] 172.17.180.47 1.202.75.193 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.030569s][吞吐率：32.71req/s] [内存消耗：4,288.66kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000339s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000441s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T02:12:43+08:00 ] 172.17.180.47 171.34.218.198 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.033243s][吞吐率：30.08req/s] [内存消耗：4,235.93kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T02:48:29+08:00 ] 172.17.180.47 111.206.36.18 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.030953s][吞吐率：32.31req/s] [内存消耗：4,288.73kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'close',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000321s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000434s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T03:12:52+08:00 ] 172.17.180.47 202.108.211.56 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.033059s][吞吐率：30.25req/s] [内存消耗：4,236.84kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000376s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000426s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T03:17:56+08:00 ] 172.17.180.47 54.144.19.177 GET /
+[ log ] HHQBLOG.com/ [运行时间：0.030662s][吞吐率：32.61req/s] [内存消耗：4,288.92kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'en-US;q=0.6,en;q=0.4',
+  'host' => 'HHQBLOG.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept-encoding' => 'gzip,deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000436s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T04:30:54+08:00 ] 172.17.180.47 40.77.167.43 GET /
+[ log ] hhqblog.com/ [运行时间：0.034192s][吞吐率：29.25req/s] [内存消耗：4,236.59kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'from' => 'bingbot(at)microsoft.com',
+  'host' => 'hhqblog.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000400s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T08:25:23+08:00 ] 172.17.180.47 140.205.225.195 GET /
+[ log ] hhqblog.com/ [运行时间：0.033575s][吞吐率：29.78req/s] [内存消耗：4,236.45kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'host' => 'hhqblog.com',
+  'referer' => 'http://hhqblog.com/',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip,deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000314s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000437s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T08:25:28+08:00 ] 172.17.180.47 140.205.225.195 GET /editors/index.html
+[ log ] hhqblog.com/editors/index.html [运行时间：0.014987s][吞吐率：66.72req/s] [内存消耗：1,586.73kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'editors',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T08:26:03+08:00 ] 172.17.180.47 140.205.225.195 GET /LICENSE.txt
+[ log ] hhqblog.com/LICENSE.txt [运行时间：0.012758s][吞吐率：78.38req/s] [内存消耗：1,586.70kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'LICENSE.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T08:26:05+08:00 ] 172.17.180.47 140.205.225.195 GET /extensions/kindeditor/themes/default/default.png)
+[ log ] hhqblog.com/extensions/kindeditor/themes/default/default.png) [运行时间：0.013956s][吞吐率：71.65req/s] [内存消耗：1,587.28kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'extensions',
+    1 => 'kindeditor',
+    2 => 'themes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'default' => 'default.png)',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T08:45:13+08:00 ] 172.17.180.47 106.45.0.174 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.030944s][吞吐率：32.32req/s] [内存消耗：4,288.66kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000313s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000459s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T09:01:56+08:00 ] 172.17.180.47 140.205.225.203 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.030223s][吞吐率：33.09req/s] [内存消耗：4,289.07kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'host' => 'www.hhqblog.com',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip,deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000432s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T09:02:01+08:00 ] 172.17.180.47 140.205.225.203 GET /editors/index.html
+[ log ] www.hhqblog.com/editors/index.html [运行时间：0.014258s][吞吐率：70.14req/s] [内存消耗：1,586.74kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'editors',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'www.hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T09:02:15+08:00 ] 172.17.180.47 42.156.251.188 GET /
+[ log ] HHQBLOG.COM/ [运行时间：0.031278s][吞吐率：31.97req/s] [内存消耗：4,289.03kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'spiderman',
+  'accept-language' => 'en-us,en-gb,en;q=0.7,*;q=0.3',
+  'accept-charset' => 'utf-8,ISO-8859-1;q=0.7,*;q=0.7',
+  'accept' => 'text/html,application/xml;q=0.9,application/xhtml+xml,text/xml;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+  'accept-encoding' => 'x-gzip, gzip, deflate',
+  'host' => 'HHQBLOG.COM',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000436s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T09:03:35+08:00 ] 172.17.180.47 140.205.225.203 GET /LICENSE.txt
+[ log ] www.hhqblog.com/LICENSE.txt [运行时间：0.014360s][吞吐率：69.64req/s] [内存消耗：1,586.69kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'LICENSE.txt',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'www.hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T09:03:37+08:00 ] 172.17.180.47 140.205.225.203 GET /extensions/kindeditor/themes/default/default.png)
+[ log ] www.hhqblog.com/extensions/kindeditor/themes/default/default.png) [运行时间：0.012612s][吞吐率：79.29req/s] [内存消耗：1,587.30kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'extensions',
+    1 => 'kindeditor',
+    2 => 'themes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;Alibaba.Security.Heimdall.950384.p)',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'www.hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'default' => 'default.png)',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T09:15:05+08:00 ] 172.17.180.47 42.156.251.185 GET /
+[ log ] hhqblog.com/ [运行时间：0.030601s][吞吐率：32.68req/s] [内存消耗：4,289.03kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'spiderman',
+  'accept-language' => 'en-us,en-gb,en;q=0.7,*;q=0.3',
+  'accept-charset' => 'utf-8,ISO-8859-1;q=0.7,*;q=0.7',
+  'accept' => 'text/html,application/xml;q=0.9,application/xhtml+xml,text/xml;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5',
+  'accept-encoding' => 'x-gzip, gzip, deflate',
+  'host' => 'hhqblog.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000426s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T09:40:54+08:00 ] 172.17.180.47 125.76.61.167 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.032439s][吞吐率：30.83req/s] [内存消耗：4,235.93kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000307s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000402s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:15+08:00 ] 172.17.180.47 38.100.21.67 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.030478s][吞吐率：32.81req/s] [内存消耗：4,288.66kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000411s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:16+08:00 ] 172.17.180.47 38.100.21.67 GET /ar/25.html
+[ log ] www.hhqblog.com/ar/25.html [运行时间：0.028595s][吞吐率：34.97req/s] [内存消耗：3,877.00kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Artical',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '25',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artical->detail[ /yjdata/www/hhqblog/application/index/controller/Artical.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/artical/detail.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'article',
+  5 => 'allpage',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000280s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ca`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ca` ON `a`.`cate_id`=`ca`.`id` WHERE  `a`.`id` = 25 LIMIT 1 [ RunTime:0.000262s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:17+08:00 ] 172.17.180.47 38.100.21.67 GET /index/index/index/cate_id/25.html
+[ log ] www.hhqblog.com/index/index/index/cate_id/25.html [运行时间：0.031035s][吞吐率：32.22req/s] [内存消耗：4,289.34kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '25',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000318s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000431s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:17+08:00 ] 172.17.180.47 38.100.21.67 GET /ar/18.html
+[ log ] www.hhqblog.com/ar/18.html [运行时间：0.028061s][吞吐率：35.64req/s] [内存消耗：3,875.59kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Artical',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artical->detail[ /yjdata/www/hhqblog/application/index/controller/Artical.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/artical/detail.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'article',
+  5 => 'allpage',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000290s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ca`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ca` ON `a`.`cate_id`=`ca`.`id` WHERE  `a`.`id` = 18 LIMIT 1 [ RunTime:0.000267s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:18+08:00 ] 172.17.180.47 38.100.21.67 GET /ar/26.html
+[ log ] www.hhqblog.com/ar/26.html [运行时间：0.028210s][吞吐率：35.45req/s] [内存消耗：3,876.38kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Artical',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '26',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artical->detail[ /yjdata/www/hhqblog/application/index/controller/Artical.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/artical/detail.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'article',
+  5 => 'allpage',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ca`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ca` ON `a`.`cate_id`=`ca`.`id` WHERE  `a`.`id` = 26 LIMIT 1 [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:18+08:00 ] 172.17.180.47 38.100.21.67 GET /index/index/index/cate_id/13.html
+[ log ] www.hhqblog.com/index/index/index/cate_id/13.html [运行时间：0.031928s][吞吐率：31.32req/s] [内存消耗：4,289.34kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '13',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000289s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.002175s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000458s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:18+08:00 ] 172.17.180.47 38.100.21.67 GET /ar/%7B%7Bd%5Bi%5D.id%7D%7D
+[ log ] www.hhqblog.com/ar/%7B%7Bd%5Bi%5D.id%7D%7D [运行时间：0.012592s][吞吐率：79.42req/s] [内存消耗：1,586.23kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'ar',
+    1 => '{{d[i].id}}',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:19+08:00 ] 172.17.180.47 38.100.21.67 GET /misc/tags/
+[ log ] www.hhqblog.com/misc/tags/ [运行时间：0.012805s][吞吐率：78.09req/s] [内存消耗：1,586.31kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'misc',
+    1 => 'tags',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:19+08:00 ] 172.17.180.47 38.100.21.67 GET /misc/ads/
+[ log ] www.hhqblog.com/misc/ads/ [运行时间：0.012665s][吞吐率：78.96req/s] [内存消耗：1,586.27kb] [文件加载：37]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'misc',
+    1 => 'ads',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-14T10:10:19+08:00 ] 172.17.180.47 38.100.21.67 GET /index/index/index/cate_id/14.html
+[ log ] www.hhqblog.com/index/index/index/cate_id/14.html [运行时间：0.030617s][吞吐率：32.66req/s] [内存消耗：4,289.34kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '14',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000296s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000425s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T12:40:13+08:00 ] 172.17.180.47 221.11.231.64 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.033440s][吞吐率：29.90req/s] [内存消耗：4,235.93kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000423s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T13:36:10+08:00 ] 172.17.180.47 220.181.108.154 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：4,289.05kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'accept-language' => 'zh-cn,zh-tw',
+  'if-none-match' => '"@NULL@"',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000441s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T14:09:30+08:00 ] 172.17.180.47 220.181.108.110 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.033024s][吞吐率：30.28req/s] [内存消耗：4,236.38kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'accept-language' => 'zh-cn,zh-tw',
+  'if-none-match' => '"@NULL@"',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000292s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000428s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T14:42:50+08:00 ] 172.17.180.47 123.125.71.45 GET /ar/29.html
+[ log ] www.hhqblog.com/ar/29.html [运行时间：0.029694s][吞吐率：33.68req/s] [内存消耗：3,895.84kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Artical',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '29',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artical->detail[ /yjdata/www/hhqblog/application/index/controller/Artical.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/artical/detail.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'article',
+  5 => 'allpage',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000288s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ca`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ca` ON `a`.`cate_id`=`ca`.`id` WHERE  `a`.`id` = 29 LIMIT 1 [ RunTime:0.000275s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T15:38:33+08:00 ] 172.17.180.47 125.76.60.194 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.032677s][吞吐率：30.60req/s] [内存消耗：4,235.93kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000396s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T20:51:00+08:00 ] 172.17.180.47 40.77.167.43 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.035083s][吞吐率：28.50req/s] [内存消耗：4,236.52kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'from' => 'bingbot(at)microsoft.com',
+  'host' => 'www.hhqblog.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 1 ORDER BY id desc LIMIT 6 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000473s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T21:23:52+08:00 ] 172.17.180.47 35.188.215.36 GET /
+[ log ] hhqblog.com/ [运行时间：0.031735s][吞吐率：31.51req/s] [内存消耗：4,289.63kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36',
+  'referer' => 'http://google.com',
+  'accept-language' => 'en-us=0.9;en=0.7',
+  'host' => 'hhqblog.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000294s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000460s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T21:42:00+08:00 ] 172.17.180.47 182.101.57.181 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.031979s][吞吐率：31.27req/s] [内存消耗：4,288.66kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Wget/1.12 (linux-gnu)',
+  'accept' => '*/*',
+  'host' => 'www.hhqblog.com',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ /yjdata/www/hhqblog/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/index/index.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'list',
+  5 => 'allpage',
+  6 => 'top_line',
+  7 => 'carousel',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000299s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `type` = 2 ORDER BY id desc LIMIT 6 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `think_article` WHERE  `status` = 1 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ac`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ac` ON `a`.`cate_id`=`ac`.`id` WHERE  `a`.`status` = 1 ORDER BY id desc LIMIT 0,15 [ RunTime:0.000448s ]
+
+---------------------------------------------------------------
+[ 2017-06-14T23:37:00+08:00 ] 172.17.180.47 220.181.108.171 GET /ar/18.html
+[ log ] www.hhqblog.com/ar/18.html [运行时间：0.030342s][吞吐率：32.96req/s] [内存消耗：3,834.15kb] [文件加载：56]
+[ info ] [ LANG ] /yjdata/www/hhqblog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Artical',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hhqblog.com',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'zh-cn,zh-tw',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '18',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artical->detail[ /yjdata/www/hhqblog/application/index/controller/Artical.php ]
+[ info ] [ VIEW ] /yjdata/www/hhqblog/public/../application/index/view/artical/detail.html [ array (
+  0 => 'menu',
+  1 => 'recommend',
+  2 => 'newarticle',
+  3 => 'hot',
+  4 => 'article',
+  5 => 'allpage',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000287s ] mysql:dbname=hhqblog;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_article` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1  AND `is_tui` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` WHERE  `status` = 1 ORDER BY id desc LIMIT 8 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `think_article` ORDER BY views desc LIMIT 8 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ca`.`name` FROM `think_article` `a` LEFT JOIN `think_article_cate` `ca` ON `a`.`cate_id`=`ca`.`id` WHERE  `a`.`id` = 18 LIMIT 1 [ RunTime:0.000227s ]
+
+---------------------------------------------------------------

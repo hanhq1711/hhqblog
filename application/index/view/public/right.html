@@ -1,0 +1,172 @@
+<div id="sidebar-right">
+	<!-- <div class="sidebox widget_vfilm_search">
+		<form onsubmit="return checkSearchForm()" method="post" name="searchform" class="search-form"
+		      id="search-formhybrid-search" action="http://www.hhqblog.com/e/search/index.php">
+			<div class="search-input">
+				<b class="search-liaosheji" style="height: 0px; top: 0px;"></b>
+				<input class="search-text" placeholder="要不找一找？" type="text" name="keyboard"
+				       id="search-texthybrid-search" value=""
+				       onfocus="if(this.value==this.defaultValue)this.value='';"
+				       onblur="if(this.value=='')this.value=this.defaultValue;">
+				<input type="submit" value="　" class="search-button">
+			</div>
+			<input type="hidden" value="title" name="show">
+			<input type="hidden" value="1" name="tempid">
+			<input type="hidden" value="news" name="tbname">
+			<input name="mid" value="1" type="hidden">
+			<input name="dopost" value="search" type="hidden">
+		</form>
+		<script type="text/javascript">
+	            jQuery(".search-input .search-text").bind('focus', function () {
+	                jQuery(".search-input .search-liaosheji").animate({height: '23px', top: '-23px'})
+	            })
+	            jQuery(".search-input .search-text").bind('blur', function () {
+	                jQuery(".search-input .search-liaosheji").animate({height: 0, top: 0})
+	            })
+		</script>
+	</div> -->
+	<!--搜索-->
+	<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=3985469976436119383' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+	<!--搜索end-->
+	<div class="sidebox widget_authorinfo">
+		<div class="author-info">
+			<img class="zuozeipc" src="/static/images/post-lz.png">
+			<div class="author-avatar">
+				<a href="javascript:;" title="站长" rel="author">
+					<img alt='站长' src='/static/images/avatar-80x80.jpg' class='avatar avatar-80 photo' height='80' width='80'/>
+					<i title="站长" class="author-ident"></i>
+				</a>
+			</div>
+			<div class="author-name">
+				<a href="javascript:;" title="由站长发布" rel="author">站长
+				</a>
+				<a href="javascript:;">
+				</a>
+				<span>认证</span>
+			</div>
+			<div class="author-des">
+				本小编负责转载分享优秀的文章资源,仅供学习与交流,如果不小心侵犯到您的权益,请及时联系站长删除该资源。如果您有干货要分享，非常欢迎您的投稿。
+			</div>
+			<div class="author-social">
+							<span class="author-blog">
+								<a href="javascript:;"  rel="nofollow" target="_blank">
+									<i class="fa fa-home"></i>博客
+								</a>
+							</span>
+				<span class="author-weibo">
+								<a href="javascript:;" rel="nofollow" target="_blank">
+								    <i class="fa fa-weibo"></i>微博
+								</a>
+							</span>
+			</div>
+		</div>
+	</div>
+	<div class="sidebox widget_vfilm_tab">
+		<div id="tab-title" class="investment_title">
+			<div class="on"> 随机推荐</div>
+			<div> 最新发布</div>
+		</div>
+		<div id="tab-content" class="investment_con">
+			<div class="investment_con_list" style="display:block;">
+				<ul class="tab_post_links">
+					{volist name='recommend' id='re' key='k'}
+					<li>
+						<a href="{:url('index/Artical/detail',array('id'=>$re.id))}" title="{$re.title}" class='tab_post_title'>
+							<span class='post_i num1'>{$k}</span>{$re.title}
+						</a>
+					</li>
+					{/volist}
+				</ul>
+			</div>
+			<div class="investment_con_list">
+				<ul class="tab_post_links">
+					{volist name='newarticle' id='new' key='k'}
+					<li>
+						<a href="{:url('index/Artical/detail',array('id'=>$new.id))}" title="{$new.title}" class='tab_post_title'>
+							<span class='post_i num1'> {$k} </span> {$new.title}
+						</a>
+					</li>
+					{/volist}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sidebox widget_text">
+		<h2><i class="fa fa-th-list"></i>广告赞助</h2>
+		<div class="textwidget">
+			<table width="300" height="250" bgcolor="#33CCCC">
+				<tr align="center" style="line-height: 250px;">
+					<td>后台-插件-广告管理-侧边广告位一</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="sidebox widget_vfilm_hotpost">
+		<h2><i class="fa fa-th-list"></i>本站热门</h2>
+		<ul class="hotpost">
+			{volist name='hot' id='h'}
+			<li>
+				<a href="{:url('index/Artical/detail',array('id'=>$h.id))}" title="{$h.title}">
+					<div class="hotpost-img">
+						<img src="{:config('webinfo.host_domain')}{:config('webinfo.qiniu_url')}{$h.photo}-hhqblog" alt="{$h.title}" class="thumbnail"/>
+					</div>
+					<div class="hotpost-left">
+						<span class="hot-post-title"> {$h.title}</span>
+						<span class="hot-post-info"><i class="fa fa-clock"></i>{$h.create_time|date='Y-m-d',###} </span>
+						<span class="hot-post-info"><i class="fa fa-eye"></i> {$h.views} </span>
+					</div>
+				</a>
+			</li>
+			{/volist}
+		</ul>
+	</div>
+	<div class="sidebox widget_text">
+		<h2><i class="fa fa-th-list"></i>广告赞助</h2>
+		<div class="textwidget">
+			<table width="300" height="250" bgcolor="#33CCCC">
+				<tr align="center" style="line-height: 250px;">
+					<td>后台-插件-广告管理-侧边广告位二</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="sidebox widget_vfilmtime_comment">
+		<h2><i class="fa fa-th-list"></i>最新评论</h2>
+		<div class="w_comment">
+			<ul>
+				<li><img alt="" src="/static/images/userpic/19.gif"
+				         class="avatar avatar-35 photo" height="35" width="35"/>
+					<a href="http://www.hhqblog.com/cyzx/534.html#comment" title="匿名在一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工上的评论" class="comment_r">
+						<p class="comment_author">匿名：</p>
+						<p class="datetime">2017-02-01</p>
+						<br>
+						<p>近日，在微商行业摸爬滚打超过一年的小依，向记者分享她曾经的“创业</p>
+					</a>
+				</li>
+				<li><img alt="" src="/static/images/userpic/19.gif"
+				         class="avatar avatar-35 photo" height="35" width="35"/>
+					<a href="http://www.hhqblog.com/cyzx/534.html#comment" title="匿名在一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工上的评论" class="comment_r">
+						<p class="comment_author">匿名：</p>
+						<p class="datetime">2017-02-01</p>
+						<br>
+						<p>近日，在微商行业摸爬滚打超过一年的小依，向记者分享她曾经的“创业</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="sidebox widget_text">
+		<!-- <h2><i class="fa fa-th-list"></i>广而告之</h2>
+		<div class="textwidget">
+			<div class="textwidget">
+				<table width="300" height="250" bgcolor="#33CCCC">
+					<tr align="center" style="line-height: 250px;">
+						<td>后台-插件-广告管理-侧边广告位二</td>
+					</tr>
+				</table>
+			</div>
+		</div>  -->
+		<!--<div id="widgetIframe"><iframe width="100%" height="350" src="http://piwik.hhqblog.com/index.php?module=Widgetize&action=iframe&widget=1&moduleToWidgetize=Live&actionToWidgetize=getSimpleLastVisitCount&idSite=1&period=day&date=today&disableLink=1&widget=1&token_auth=54a2252a2ca3dd7848d58fcab867dd34
+" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
+	</div>-->
+</div>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1,maximum-scale=4, minimum-scale=1, user-scalable=no"/>
+	<meta name="keywords" content="php技术分享,php博客,个人博客,gitHub,mysql,Nginx,Apache,html,JQuery,css,javascript,js,php,socket,thinkphp,程序员，程序猿，html5 html5 教程, php个人博客源代码"/>
+	<meta name="description" content="韩会强博客是一个以PHP学习,PHP技术,PHP网站开发为核心的PHP技术分享博客,真实记录PHPer在学习PHP过程中遇到的各种PHP问题和解决方法-冯定波PHP技术分享博客,提供mysql,Nginx,Apache,html专业知识,专注技术前沿,分享最新技术资讯"/>
+	<title>韩会强博客-php江湖-php博客</title>
+	<link rel="shortcut icon" href="__ROOT__/favicon.ico" type="image/x-icon">
+	<!--ios图标-->
+	<link href="__CSS__/prettify.css" type="text/css" rel="stylesheet"/>
+	<!--代码高亮-->
+	<script type="text/javascript" src="__JS__/jquery.min.js"></script>
+	<script type="text/javascript" src="__JS__/suxingme.js"></script>
+	<script type="text/javascript" src="__JS__/prettify.js"></script>
+	<link rel='stylesheet' id='fontello-css' href='__CSS__/font-awesome.min.css'
+	      type='text/css' media='all'/>
+	<!--[if lte IE 7]>
+	<link rel='stylesheet' id='fontello-ie7-css'
+	      href='__CSS__/font-awesome-ie7.min.css' type='text/css' media='all'/>
+	<![endif]-->
+	<link rel='stylesheet' id='main-css' href='__CSS__/style.css' type='text/css'
+	      media='all'/>
+	<!--ADD_CODE_HEADER_START-->
+	<link rel="stylesheet" href="__CSS__/highlight.css">
+	<!--代码高亮css-->
+	<script type="text/javascript" src="__JS__/slideshow.js"></script>
+<!-- 	<script>
+//百度统计
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a43511ae0d054430ae20203b0c44a3d3";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script> -->
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.hhqblog.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- Piwik -->
+<!-- <script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//hhqblog.innocraft.cloud/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script> -->
+<!-- End Piwik Code -->
+<!-- End Piwik Code -->
+
+	<!--ADD_CODE_HEADER_END-->
+</head>
+<body class="custom-background">
+<div id="header">
+	<div class="header">
+		<h1 id="logo">
+			<hgroup class="logo-site"><a href="{:config('webinfo.weburl')}"> <img
+					src="__IMG__/logo.png" alt="韩会强博客"/> </a> </hgroup>
+		</h1>
+		<div id="mainnav">
+			<ul id="nav">
+				<li class="current-menu-item"><a href="{:config('webinfo.weburl')}">首页</a></li>
+				{foreach name='menu' item='cate'}
+				{if condition="empty($cate['child'])"}
+				<li><a href="{:url('Index/index',array('cate_id'=>$cate['id']))}" title="{$cate['name']}">{$cate['name']}</a></li>
+				{else /}
+				<li class="menu-item-has-children submenu "><a href="javascript:;"
+															   title="{$cate['name']}">{$cate['name']}</a><span class="sign "></span>
+					<ul class="sub-menu">
+						{foreach name='cate.child' item='sub_cate'}
+						<li><a href="{:url('Index/index',array('cate_id'=>$sub_cate['id']))}" title="{$sub_cate['name']}">{$sub_cate['name']}</a></li>
+						{/foreach}
+					</ul>
+				</li>
+				{/if}
+				{/foreach}
+			</ul>
+		</div>
+		<div class="rightnav"></div>
+		<div class="mini_search"> <!-- Search begin -->
+			<form onsubmit="return checkSearchForm()" method="post" name="searchform" id="searchform" class="searchform"
+			      action="http://www.hanhqtest.com/e/search/index.php">
+				<input class="searchInput" name="keyboard" type="text" placeholder="搜索关键字">
+				<input class="searchBtn radius" type="submit" title="搜索" value="搜 索">
+				<input type="hidden" value="title" name="show">
+				<input type="hidden" value="1" name="tempid">
+				<input type="hidden" value="news" name="tbname">
+				<input name="mid" value="1" type="hidden">
+				<input name="dopost" value="search" type="hidden">
+			</form>
+			<!-- Search end --> </div>
+		<a id="mo-so" href="javascript:void(0);"><i class="fa fa-search"></i></a></div>
+	<ul id="mobile-menu" class="mininav">
+		<li class="current-menu-item"><a href="/">首页</a></li>
+		{foreach name='menu' item='min_cate'}
+		{if condition="empty($min_cate['child'])"}
+		<li><a href="{:url('Index/index',array('cate_id'=>$min_cate['id']))}" title="{$min_cate['name']}">{$min_cate['name']}</a></li>
+		{else /}
+				{foreach name='min_cate.child' item='min_sub_cate'}
+				<li><a href="{:url('Index/index',array('cate_id'=>$min_sub_cate['id']))}" title="{$min_sub_cate['name']}">{$min_sub_cate['name']}</a></li>
+				{/foreach}
+		{/if}
+		{/foreach}
+	</ul>
+</div>

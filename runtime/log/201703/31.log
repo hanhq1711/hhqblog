@@ -1,0 +1,2185 @@
+[ 2017-03-31T23:27:38+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.081510s][吞吐率：12.27req/s] [内存消耗：147.18kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'upgrade-insecure-requests' => '1',
+  'proxy-connection' => 'keep-alive',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:28:08+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.009373s][吞吐率：106.69req/s] [内存消耗：151.41kb] [文件加载：34]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:07+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.040181s][吞吐率：24.89req/s] [内存消耗：371.75kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:07+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg [运行时间：0.009113s][吞吐率：109.74req/s] [内存消耗：144.25kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:07+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/2495e46bb60ab13f9e3fdc4accc59630.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/2495e46bb60ab13f9e3fdc4accc59630.jpg [运行时间：0.009222s][吞吐率：108.44req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/2495e46bb60ab13f9e3fdc4accc59630_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:07+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/fa486ed39fbb3ef2df7c23fe73abe708.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/fa486ed39fbb3ef2df7c23fe73abe708.jpg [运行时间：0.008755s][吞吐率：114.22req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/fa486ed39fbb3ef2df7c23fe73abe708_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:07+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/9a886e43b17e0d32b78726ea078d2dde.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/9a886e43b17e0d32b78726ea078d2dde.jpg [运行时间：0.008129s][吞吐率：123.02req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/9a886e43b17e0d32b78726ea078d2dde_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/20ffe0403f828f8dd16fb5458477a5c3.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/20ffe0403f828f8dd16fb5458477a5c3.jpg [运行时间：0.009101s][吞吐率：109.88req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/20ffe0403f828f8dd16fb5458477a5c3_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.008041s][吞吐率：124.36req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.008866s][吞吐率：112.79req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:08+08:00 ] 127.0.0.1 127.0.0.1 GET /static/fonts/fontawesome-webfont.woff2?v=4.7.0
+[ log ] www.hhqblog.com/static/fonts/fontawesome-webfont.woff2?v=4.7.0 [运行时间：0.008920s][吞吐率：112.11req/s] [内存消耗：144.57kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'fonts',
+    2 => 'fontawesome-webfont.woff2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/static/css/font-awesome.min.css',
+  'accept' => '*/*',
+  'origin' => 'http://www.hhqblog.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/fonts/fontawesome-webfont_woff2' => '',
+  'v' => '4.7.0',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg [运行时间：0.016381s][吞吐率：61.05req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.008363s][吞吐率：119.57req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:09+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.016473s][吞吐率：60.71req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:09+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.011889s][吞吐率：84.11req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:09+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.015267s][吞吐率：65.50req/s] [内存消耗：144.25kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-23',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:09+08:00 ] 127.0.0.1 127.0.0.1 GET /static/fonts/fontawesome-webfont.woff?v=4.7.0
+[ log ] www.hhqblog.com/static/fonts/fontawesome-webfont.woff?v=4.7.0 [运行时间：0.017378s][吞吐率：57.54req/s] [内存消耗：144.55kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'fonts',
+    2 => 'fontawesome-webfont.woff',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/static/css/font-awesome.min.css',
+  'accept' => '*/*',
+  'origin' => 'http://www.hhqblog.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/fonts/fontawesome-webfont_woff' => '',
+  'v' => '4.7.0',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:29:09+08:00 ] 127.0.0.1 127.0.0.1 GET /static/fonts/fontawesome-webfont.ttf?v=4.7.0
+[ log ] www.hhqblog.com/static/fonts/fontawesome-webfont.ttf?v=4.7.0 [运行时间：0.005770s][吞吐率：173.31req/s] [内存消耗：144.55kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'fonts',
+    2 => 'fontawesome-webfont.ttf',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/static/css/font-awesome.min.css',
+  'accept' => '*/*',
+  'origin' => 'http://www.hhqblog.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/fonts/fontawesome-webfont_ttf' => '',
+  'v' => '4.7.0',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.027524s][吞吐率：36.33req/s] [内存消耗：228.83kb] [文件加载：41]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg [运行时间：0.010283s][吞吐率：97.25req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/2495e46bb60ab13f9e3fdc4accc59630.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/2495e46bb60ab13f9e3fdc4accc59630.jpg [运行时间：0.009656s][吞吐率：103.56req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/2495e46bb60ab13f9e3fdc4accc59630_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/fa486ed39fbb3ef2df7c23fe73abe708.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/fa486ed39fbb3ef2df7c23fe73abe708.jpg [运行时间：0.009030s][吞吐率：110.74req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/fa486ed39fbb3ef2df7c23fe73abe708_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/9a886e43b17e0d32b78726ea078d2dde.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/9a886e43b17e0d32b78726ea078d2dde.jpg [运行时间：0.008337s][吞吐率：119.95req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/9a886e43b17e0d32b78726ea078d2dde_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/20ffe0403f828f8dd16fb5458477a5c3.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/20ffe0403f828f8dd16fb5458477a5c3.jpg [运行时间：0.008576s][吞吐率：116.61req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/20ffe0403f828f8dd16fb5458477a5c3_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:57+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.008948s][吞吐率：111.76req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-23',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.008642s][吞吐率：115.71req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.014872s][吞吐率：67.24req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.015174s][吞吐率：65.90req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.033543s][吞吐率：29.81req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c.jpg [运行时间：0.008781s][吞吐率：113.88req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/5bf795b15edd34f26e615dca49d1bd6c_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.009082s][吞吐率：110.11req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.014336s][吞吐率：69.76req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-23',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.008045s][吞吐率：124.30req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.008483s][吞吐率：117.88req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:31:58+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.009311s][吞吐率：107.40req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.025414s][吞吐率：39.35req/s] [内存消耗：368.85kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.009937s][吞吐率：100.64req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-23',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.009331s][吞吐率：107.17req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.008172s][吞吐率：122.37req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.019419s][吞吐率：51.50req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.008139s][吞吐率：122.86req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-23',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-23/676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.008112s][吞吐率：123.27req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.008582s][吞吐率：116.52req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.012949s][吞吐率：77.23req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:35:27+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.008123s][吞吐率：123.11req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.087578s][吞吐率：11.42req/s] [内存消耗：375.71kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /static/images676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/static/images676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.012974s][吞吐率：77.08req/s] [内存消耗：146.42kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images676a058a500db64d6b3acf572e1b94af.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/images676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.009165s][吞吐率：109.11req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.008201s][吞吐率：121.93req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.008494s][吞吐率：117.73req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:49+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.009071s][吞吐率：110.24req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:50+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.008449s][吞吐率：118.36req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:50+08:00 ] 127.0.0.1 127.0.0.1 GET /static/images676a058a500db64d6b3acf572e1b94af.jpg
+[ log ] www.hhqblog.com/static/images676a058a500db64d6b3acf572e1b94af.jpg [运行时间：0.008722s][吞吐率：114.65req/s] [内存消耗：144.28kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images676a058a500db64d6b3acf572e1b94af.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/images676a058a500db64d6b3acf572e1b94af_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:38:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.015278s][吞吐率：65.45req/s] [内存消耗：144.25kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.015100s][吞吐率：66.23req/s] [内存消耗：368.75kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.008596s][吞吐率：116.33req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.009038s][吞吐率：110.64req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.014652s][吞吐率：68.25req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg
+[ log ] www.hhqblog.com/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18.jpg [运行时间：0.009128s][吞吐率：109.55req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-10-24',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-10-24/9616f5c4400fbe351b98ddd87edb1d18_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.008086s][吞吐率：123.67req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:50+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.008788s][吞吐率：113.79req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:39:51+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.007761s][吞吐率：128.85req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:08+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.037109s][吞吐率：26.95req/s] [内存消耗：368.63kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.009857s][吞吐率：101.45req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:08+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.016016s][吞吐率：62.44req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:08+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.008368s][吞吐率：119.50req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:09+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg [运行时间：0.008414s][吞吐率：118.85req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:09+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.007923s][吞吐率：126.22req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:09+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.008340s][吞吐率：119.90req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:53+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.013491s][吞吐率：74.12req/s] [内存消耗：368.48kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:53+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.008762s][吞吐率：114.13req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:53+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.009235s][吞吐率：108.28req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:53+08:00 ] 127.0.0.1 127.0.0.1 GET /d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg
+[ log ] www.hhqblog.com/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf.jpg [运行时间：0.009322s][吞吐率：107.27req/s] [内存消耗：144.26kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'd',
+    1 => 'file',
+    2 => '2016-01-01',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/d/file/2016-01-01/b8b3198a4b855bafee497eefbb292ecf_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:41:53+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.008997s][吞吐率：111.15req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:42:58+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ log ] www.hhqblog.com/ [运行时间：0.020339s][吞吐率：49.17req/s] [内存消耗：368.35kb] [文件加载：43]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\hblog\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\phpStudy\WWW\hblog\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:42:58+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.010960s][吞吐率：91.24req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-31T23:42:58+08:00 ] 127.0.0.1 127.0.0.1 GET /skin/ecms118/images/weixin.jpg
+[ log ] www.hhqblog.com/skin/ecms118/images/weixin.jpg [运行时间：0.009481s][吞吐率：105.47req/s] [内存消耗：144.09kb] [文件加载：36]
+[ info ] [ LANG ] E:\phpStudy\WWW\hblog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'ecms118',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7870825472; pgv_si=s7599300608',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.hhqblog.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.hhqblog.com',
+)
+[ info ] [ PARAM ] array (
+  '/skin/ecms118/images/weixin_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

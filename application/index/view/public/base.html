@@ -1,0 +1,77 @@
+{include file='public/header' /}
+{block name='css'}{/block}
+<div id="wrapper"> <!-- sitenews -->
+	<!--内容顶部-->
+	{block name='min_header'}
+
+	{/block}
+	<div id="main" class="clearfix">
+		<div id="wrap">
+			{block name='content'}{/block}
+			{include file='public/right' /}
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<!-- wrapper over -->
+{include file='public/footer' /}
+<script type="text/javascript" src="__JS__/jquery.sticky.js"></script>
+<script> jQuery(window).load(function () {
+    jQuery("#sidebar-left-xf").sticky({topSpacing: 10, bottomSpacing: 240});
+}); </script>
+<script>
+    jQuery(document).ready(function (a) {
+        var c = 1,
+            d = 2;
+        a.browser.msie && 6 == a.browser.version && !a.support.style || (
+            e = a("#sidebar-right").width(), <!-- 右侧边栏宽度 -->
+                f = a("#sidebar-right .sidebox"), <!-- 右侧边栏（不含悬浮）-->
+                g = f.length, <!-- 右侧边栏高度（不含悬浮）-->
+            g >= (c > 0) && g >= (d > 0) && a(window).scroll(function () {
+                var b = document.documentElement.scrollTop + document.body.scrollTop;
+                <!-- 滚动条距离上方-->
+                b > f.eq(g - 1).offset().top + f.eq(g - 1).height() ? 0 == a(".roller").length ? (f.parent().append('<div class="roller"></div>'),
+                            f.eq(c - 1).clone().appendTo(".roller"),
+                        c !== d && f.eq(d - 1).clone().appendTo(".roller"),
+                            a(".roller").css({
+                                position: "fixed",
+                                top: 10,
+                                zIndex: 0,
+                                width: 250
+                            }),
+                            a(".roller").width(e)) : a(".roller").fadeIn(300) : a(".roller").fadeOut(300)
+            }));
+        //标签切换
+        function tabs(tabTit, on, tabCon) {
+            $(tabCon).each(function () {
+                $(this).children().eq(0).show();
+            });
+            $(tabTit).each(function () {
+                $(this).children().eq(0).addClass(on);
+            });
+            $(tabTit).children().mouseover(function () {
+                $(this).addClass(on).siblings().removeClass(on);
+                var index = $(tabTit).children().index(this);
+                $(tabCon).children().eq(index).show().siblings().hide();
+            });
+        }
+
+        tabs(".investment_title", "on", ".investment_con");
+        <!--代码高亮-->
+        jQuery("pre").addClass("prettyprint linenums");
+        prettyPrint();
+    });
+  //百度分享
+  window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"【" + $("title").text() + "】" + $("#post h1:lt(2)").text(),"bdMini":"2","bdMiniList":false,"bdPic":$(".post-content img:first") ? $(".post-content img:first").attr("src") : "","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"right","bdTop":"100"},"image":{"viewList":["weixin","sqq","qzone","tsina","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","sqq","qzone","tsina","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<!--ADD_CODE_FOOTER_START-->
+<script type="text/javascript" src="__JS__/add.js"></script>
+<script src="/static/admin/js/laypage/laypage.js"></script>
+<script src="/static/admin/js/laytpl/laytpl.js"></script>
+<!--ADD_CODE_FOOTER_END-->
+<a href="#0" class="cd-top">Top</a>
+<div class="adm" style="display: none;"></div>
+<div class="hotarticlead"> <!--右下角广告或者弹窗或者对联广告可以放这里 --> </div>
+{block name='js'}{/block}
+</body>
+</html>

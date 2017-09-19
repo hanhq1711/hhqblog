@@ -1,0 +1,199 @@
+{include file="public/header" /}
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>菜单列表</h5>
+        </div>
+        <div class="ibox-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div  class="col-sm-2">
+                        <div class="input-group" >
+                            <button type="button" class="btn btn-primary btn-outline" data-toggle="modal" data-target="#myModal">添加菜单</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-line-dashed"></div>
+            <div class="example-wrap">
+                <div class="example">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                        <tr class="long-tr">
+                            <th>ID</th>
+                            <th>名称</th>
+                            <th>排序</th>
+                            <th>状态</th>
+                            <th width="15%">添加时间</th>
+                            <th width="15%">更新时间</th>
+                            <th width="20%">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody id="article_list">
+                        {foreach name="list" item="vo"}
+                        <tr class="long-td">
+                            <td style="text-align: left">
+                                {if condition="!empty($vo['child'])"}
+                                <i class="fa fa-chevron-down" aria-hidden="true" onclick="toggle_status(this,'{$vo.id}')"></i>
+                                {else /}<i class="fa fa-chevron-up" aria-hidden="true"></i>{/if}
+                                {$vo.id}</td>
+                            <td style="text-align: left">├─{$vo.name}</td>
+                            <td>{$vo.orderby}</td>
+                            <td>
+                                {if condition="$vo['status'] == 1"}
+                                <a href="javascript:;" onclick="cate_status({$vo.id});">
+                                    <div id="zt{$vo.id}"><span class="label label-info">开启</span></div>
+                                </a>
+                                {else/}
+                                <a href="javascript:;" onclick="cate_status({$vo.id});">
+                                    <div id="zt{$vo.id}"><span class="label label-danger">禁用</span></div>
+                                </a>
+                                {/if}
+                            </td>
+                            <td>{$vo.create_time|date='Y-m-d H:i:s',###}</td>
+                            <td>{$vo.update_time|date='Y-m-d H:i:s',###}</td>
+                            <td>
+                                <a href="{:url('edit_cate',['id'=>$vo.id])}" class="btn btn-primary btn-xs">
+                                    <i class="fa fa-paste"></i> 编辑</a>&nbsp;&nbsp;
+                                <a href="javascript:;" onclick="del_cate({$vo.id})" class="btn btn-danger btn-xs">
+                                    <i class="fa fa-trash-o"></i> 删除</a>
+                            </td>
+                        </tr>
+                        {notempty name='vo.child'}
+                            {foreach name='vo.child' item='sub_vo'}
+                        <tr class="long-td parent_id_{$sub_vo.parent_id}" style="display: none;">
+                            <td style="text-align: left">&nbsp;&nbsp;&nbsp;
+                                {$sub_vo.id}</td>
+                            <td style="text-align: left">&nbsp;&nbsp;&emsp;├── {$sub_vo.name}</td>
+                            <td>{$sub_vo.orderby}</td>
+                            <td>
+                                {if condition="$sub_vo['status'] == 1"}
+                                <a href="javascript:;" onclick="cate_status({$sub_vo.id});">
+                                    <div id="zt{$sub_vo.id}"><span class="label label-info">开启</span></div>
+                                </a>
+                                {else/}
+                                <a href="javascript:;" onclick="cate_status({$vo.id});">
+                                    <div id="zt{$sub_vo.id}"><span class="label label-danger">禁用</span></div>
+                                </a>
+                                {/if}
+                            </td>
+                            <td>{$sub_vo.create_time}</td>
+                            <td>{$sub_vo.update_time}</td>
+                            <td>
+                                <a href="{:url('edit_cate',['id'=>$sub_vo.id])}" class="btn btn-primary btn-xs">
+                                    <i class="fa fa-paste"></i> 编辑</a>&nbsp;&nbsp;
+                                <a href="javascript:;" onclick="del_cate({$sub_vo.id})" class="btn btn-danger btn-xs">
+                                    <i class="fa fa-trash-o"></i> 删除</a>
+                            </td>
+                        </tr>
+                            {/foreach}
+                        {/notempty}
+                        {/foreach}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+{include file="public/footer" /}
+<div class="modal  fade" id="myModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title">添加分类</h3>
+            </div>
+            <form class="form-horizontal" name="add_cate" id="add_cate" method="post" action="{:url('add_cate')}">
+                <div class="ibox-content">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">所属父级</label>
+                        <div class="col-sm-8">
+                            <select name="parent_id" class="form-control">
+                                <option value="0">--默认顶级--</option>
+                                {foreach name='list' item='v'}
+                                <option value="{$v.id}">{$v['name']}</option>
+                                {/foreach}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">分类名称</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="name" id="title" placeholder="输入分类名称" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">排&nbsp;序</label>
+                        <div class="col-sm-8">
+                            <input type="text" name="orderby" id="orderby" value="50" placeholder="输入排序" class="form-control"/>
+                        </div>
+                    </div>
+                    <div class="hr-line-dashed"></div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">状&nbsp;态</label>
+                        <div class="col-sm-6">
+                            <div class="radio i-checks">
+                                <input type="radio" name='status' value="1" checked="checked" />启用&nbsp;&nbsp;
+                                <input type="radio" name='status' value="0" />禁用
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> 保存</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-close"></i> 关闭</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function(){
+        $('#add_cate').ajaxForm({
+            beforeSubmit: checkForm,
+            success: complete,
+            dataType: 'json'
+        });
+
+        function checkForm(){
+            if( '' == $.trim($('#title').val())){
+                layer.msg('请输入分类名称',{icon:2,time:1500,shade: 0.1}, function(index){
+                    layer.close(index);
+                });
+                return false;
+            }
+
+        }
+
+
+        function complete(data){
+            if(data.code==1){
+                layer.msg(data.msg, {icon: 6,time:1500,shade: 0.1}, function(index){
+                    window.location.href="{:url('Category/index')}";
+                });
+            }else{
+                layer.msg(data.msg, {icon: 6,time:1500,shade: 0.1});
+                return false;
+            }
+        }
+
+    });
+
+    function del_cate(id){
+        hhqblog.confirm(id,'{:url("cate_del")}')
+    }
+    //菜单状态
+    function cate_status(id){
+        hhqblog.status(id,'{:url("cate_status")}');
+    }
+</script>
+</body>
+</html>

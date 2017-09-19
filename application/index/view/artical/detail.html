@@ -1,0 +1,233 @@
+{extend name="public/base" /}
+{block name='min_header'}
+<div class="breadcrumb">你的位置：<a href="{:config('webinfo.weburl')}">首页</a>&nbsp;>&nbsp;
+	<a href="javascript:;">{$article.name}</a>
+	<small>&gt;</small>
+	<span class="current">正文</span><!-- .breadcrumbs -->
+</div>
+{/block}
+{block name='content'}
+<div id="article">
+	<div id="post">
+		<div class="title">
+			<div class="post-title">
+				<h1>{$article.title}</h1>
+				<div class="post_icon"><span class="post-time"><i
+						class="fa fa-clock-o"></i> {$article.create_time|date='Y-m-d',###}</span> <span class="post-from"><i
+						class="fa fa-external-link"></i> {$article.auth} </span>
+					 <span class="post-cat"><i class="fa fa-align-left"></i> <a href="http://www.hanhqtest.com/cyzx/">{$article.name}</a> </span>
+					<span class="post-view"><i class="fa fa-eye"></i> {$article.views}</span>
+					<span class="post-comment"><a href="javascript:;" title="评论"><i class="fa fa-comment"></i><a
+							href="javascript:;"> 50 </a></a> </span>
+					<span class="post-like-right" style="color:#f66"> <a title="喜欢就赞一个！" href="javascript:;" class="favorite"> <i
+							class="fa fa-heart" style="color:#f66"></i> <span class="count" id="diggnum"> 50 </span></a> </span>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!--文章标题下方固定ad start-->
+		<div class="ad clearfix">
+			<div class="pcd_ad">
+				<!--<script src=http://www.hanhqtest.com/d/js/acmsd/thea6.js></script>-->
+			</div>
+			<div class="mbd_ad">
+				<table width="100%" height="90" bgcolor="#33CCCC">
+					<tr align="center" style="line-height: 90px;background-color: #33CCCC;color: #fff;">
+						<td>后台-系统设置-扩展变量-手机广告位-内容正文顶部</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="post"> <!--摘要 start-->
+			<div class="excerpt"><strong>[摘要]</strong>
+				<p>{$article.remark}</p>
+			</div>
+			<!--摘要 end--> <!--正文 start-->
+			{$article.content}
+			<!-- 文章分页 -->
+			<div id="page">
+				<div class="AjaxPage"></div>
+			</div>
+			<!--正文下方ad-->
+			<div class="article-ad">
+				<div class="pcd_ad">
+					<!--<script src=http://www.hanhqtest.com/d/js/acmsd/thea7.js></script>-->
+				</div>
+				<div class="mbd_ad">
+					<table width="100%" height="90" bgcolor="#33CCCC">
+				<tr align="center" style="line-height: 90px;background-color: #33CCCC;color: #fff;">
+					<td>后台-系统设置-扩展变量-手机广告-内容页底部1</td>
+				</tr>
+			</table>
+				</div>
+			</div>
+			<!--百度收录查询-->
+			<div style="float:right;clear: both;">百度收录查询</div>
+		</div>
+		<!--正文 end-->
+		<div class="clear"></div>
+		<div id="social">
+			<div class="social-main">
+				<a href="JavaScript:;" title="我赞" class="like favorite"><i class="fa fa-thumbs-o-up"></i>赞
+					<i class="count" id="diggnum">(50)</i> </a>
+				<a href="#shang" id="shang-main-p" class="shang-p" title="赞助本站"><i class="fa fa-credit-card"></i>打赏</a>
+				<!-- <a href="#share" id="share-main-s" class="share-s" title="分享"><i class="fa fa-mail-forward"></i>分享</a> -->
+				<div class="clear"></div>
+			</div>
+			<!-- <div id="share">
+				<div class="bdsharebuttonbox bdshare-button-style0-32" data-tag="share_1"
+				     data-bd-bind="1432096538496"><a class="bds_tsina" title="分享到新浪微博" data-cmd="tsina"
+				                                     href="#"></a> <a class="bds_weixin" title="分享到微信"
+				                                                      data-cmd="weixin" href="#"></a> <a
+						class="bds_qzone" title="分享到QQ空间" data-cmd="qzone" href="#"></a> <a class="bds_tqq "
+				                                                                            title="分享到腾讯微博"
+				                                                                            data-cmd="tqq"
+				                                                                            href="#"></a> <a
+						class="bds_renren" title="分享到人人网" data-cmd="renren" href="#"></a> <a
+						class="bds_more" data-cmd="more" href="#"></a>
+					<script> window._bd_share_config = {
+			                        common: {
+			                            "bdSnsKey": {"tsina": "123456789"},
+			                            "bdText": "【" + $("title").text() + "】" + $("#post p:lt(2)").text(),
+			                            "bdMini": "2",
+			                            "bdMiniList": false,
+			                            "bdPic": $(".post-content img:first") ? $(".post-content img:first").attr("src") : "",
+			                            "bdStyle": "0",
+			                            "bdSize": "24"
+			                        },
+			                        share: [, {
+			                            tag: '',
+			                            bdSize: '32',
+			                            bdCustomStyle: '/static/css/share.css'
+			                        }],
+			                    };
+			                    with (document)0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)]; </script>
+				</div> 
+			</div>-->
+			<div id="shang">
+				<div class="shang-main">
+					<h4>如果认为本文对您有所帮助请赞助本站</h4>
+					<img title="支付宝扫一扫赞助"
+					     src="/static/images/zhifubao_qrcode.png"><img
+						title="微信扫一扫赞助"
+						src="/static/images/wechat_qrcode.png">
+					<h4 class="clearfix">
+						<li style="width: 50%;float: left;color: #FF6666;">支付宝扫一扫赞助</li>
+						<li style=" width: 50%;float: left;color: #5CB85C;">微信扫一扫赞助</li>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="post-statement"> 声明：<!--凡注明“本站原创”的所有文字图片等资料，版权均属<a href='http://www.hanhqtest.com/'
+		                                                           target='blank'>韩会强博客</a>所有，-->欢迎转载，但务请注明出处；
+		</div>
+		<div class="post-tags">标签：
+			<a href="javascript:;" target="_blank">{$article.name}</a>
+		</div>
+		<div class="clear"></div>
+		<!--<div class="post-nav">
+			<span class="post-nav-next"><a href='http://www.hanhqtest.com/cyzx/1.html'>O2O 创业公司的倒闭潮即将来临</a> <i
+				class="fa fa-angle-right"></i></span>
+			<span class="post-nav-prev"><a href='http://www.hanhqtest.com/cyzx/3.html'>7位80后大学生创业者，回西安创业 勇闯天下</a> <i class="fa fa-angle-left"></i></span></div>-->
+	</div>
+	<!-- post over -->
+	<div class="post-gg-2 clearfix">
+		<div class="pcd_ad">
+			<!--<script src=http://www.hanhqtest.com/d/js/acmsd/thea10.js></script>-->
+		</div>
+		<div class="mbd_ad">
+			<table width="100%" height="90" bgcolor="#33CCCC">
+				<tr align="center" style="line-height: 90px;background-color: #33CCCC;color: #fff;">
+					<td>后台-系统设置-扩展变量-手机广告-内容页底部2</td>
+				</tr>
+			</table>
+		</div>
+	
+	</div>
+	<!--<div id="related">
+		<div class="related-title"><i class="fa fa-bookmark"></i>与本文相关的文章</div>
+		<ul class="related_img">
+			<li><a href="http://www.hanhqtest.com/cyzx/530.html" title="回首2015，十位大佬眼中的2016或未来的创业趋势"
+			       target="_blank"> <img src="/d/file/2016-01-01/902e43f98d1a03335cccb49bc9380a4f.jpg"
+			                             alt="回首2015，十位大佬眼中的2016或未来的创业趋势" class="thumbnail"/> </a> <a
+					href="http://www.hanhqtest.com/cyzx/530.html" title="回首2015，十位大佬眼中的2016或未来的创业趋势"
+					target="_blank">
+				<h2>回首2015，十位大佬眼中的2016或未来</h2>
+			</a></li>
+			<li><a href="http://www.hanhqtest.com/cyzx/529.html" title="资本也能娱乐化，互联网金融跨界娱乐不扯淡"
+			       target="_blank"> <img src="/d/file/2016-01-01/d0c7f012ffe18d1e143ee9c447fa0464.jpg"
+			                             alt="资本也能娱乐化，互联网金融跨界娱乐不扯淡" class="thumbnail"/> </a> <a
+					href="http://www.hanhqtest.com/cyzx/529.html" title="资本也能娱乐化，互联网金融跨界娱乐不扯淡"
+					target="_blank">
+				<h2>资本也能娱乐化，互联网金融跨界娱乐</h2>
+			</a></li>
+			<li><a href="http://www.hanhqtest.com/cyzx/528.html" title="创业邦：2015中国最佳创业城市榜单出炉"
+			       target="_blank"> <img src="/d/file/2016-01-01/4614ca6a9d1570d1b45336b43303a979.jpg"
+			                             alt="创业邦：2015中国最佳创业城市榜单出炉" class="thumbnail"/> </a> <a
+					href="http://www.hanhqtest.com/cyzx/528.html" title="创业邦：2015中国最佳创业城市榜单出炉"
+					target="_blank">
+				<h2>创业邦：2015中国最佳创业城市榜单出</h2>
+			</a></li>
+			<li><a href="http://www.hanhqtest.com/cyzx/527.html" title="浙江省首届大学生创业峰会开幕在即，这些亮点不容错过"
+			       target="_blank"> <img src="/d/file/2016-01-01/801fb54069b9c664ad7b5d1c57a5a062.jpg"
+			                             alt="浙江省首届大学生创业峰会开幕在即，这些亮点不容错过" class="thumbnail"/> </a> <a
+					href="http://www.hanhqtest.com/cyzx/527.html" title="浙江省首届大学生创业峰会开幕在即，这些亮点不容错过"
+					target="_blank">
+				<h2>浙江省首届大学生创业峰会开幕在即</h2>
+			</a></li>
+		</ul>
+		&lt;!&ndash; 相关文章原生AD &ndash;&gt;
+		<div class="post-gg-2 clearfix" style="box-shadow: none;border: none;padding: 0;">
+			<div class="pcd_ad">
+				<script src=http://www.hanhqtest.com/d/js/acmsd/thea11.js></script>
+			</div>
+			<div class="mbd_ad">
+				<table width="100%" height="90" bgcolor="#33CCCC">
+					<tr align="center" style="line-height: 90px;background-color: #33CCCC;color: #fff;">
+						<td>后台-系统设置-扩展变量-手机广告-内容页底部2</td>
+					</tr>
+				</table>
+			</div>
+		
+		</div>
+	</div>-->
+	<div class="clear"></div>
+	<div id="comments" class="clearfix">
+		<div class="comments-box" style="padding: 10px;">
+			<div class="pl-520am" data-id="2" data-classid="1"></div>
+			<div class="lgy_no_data">
+				<p><i class="iconfont icon-comment"></i></p>
+				<font color="#999">暂无评论</font>
+			</div>
+		</div>
+	<div class="mb15"></div>
+	</div>
+</div>
+{/block}
+{block name='js'}
+<script>
+    $(function(){
+        ajax_page();
+    });
+    //以下将以jquery.ajax为例，演示一个异步分页
+    function ajax_page(curr) {
+            laypage({
+                cont: $('.AjaxPage'),//容器。值支持id名、原生dom对象，jquery对象,
+                pages: '{$allpage}',//总页数
+                skip: false,//是否开启跳页
+                skin: '#32a5e7',//分页组件颜色
+                curr: curr || 1,
+                allpage:true,
+                groups: 5,//连续显示分页数
+                jump: function (obj, first) {
+                    if(!first){
+                        var curr = obj.curr;
+                        alert(curr);
+					}
+                }
+            });
+    }
+</script>
+{/block}

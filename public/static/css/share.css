@@ -1,0 +1,39 @@
+.bdsharebuttonbox{
+    position:relative;
+    display:block;
+}
+.bdsharebuttonbox a{    
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/social-share.png);
+    -webkit-background-size: 400px 50px;
+    -o-background-size: 400px 50px;
+    background-size: 400px 50px;
+    text-indent: -1000px;
+    margin-right: 3px;
+}
+.bdsharebuttonbox  .bds_more {
+    background-position: -55px -5px;
+}
+.bdsharebuttonbox  .sprite_bds_sqq {
+    background-position: -205px -5px;
+}
+.bdsharebuttonbox  .bds_weixin {
+    background-position: -355px -5px;
+}
+.bdsharebuttonbox  .bds_tsina {
+    background-position: -305px -5px;
+}
+.bdsharebuttonbox  .bds_qzone {
+    background-position: -105px -5px;
+}
+.bdsharebuttonbox  .bds_tqq {
+    background-position: -255px -5px;
+}
+.bdsharebuttonbox  .bds_renren {
+    background-position: -155px -5px;
+}
+.bdsharebuttonbox  .bds_douban {
+    background-position: -5px -5px;
+}
