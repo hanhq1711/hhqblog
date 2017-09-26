@@ -1,470 +1,468 @@
 {extend name="public/base" /}
 {block name='min_header'}
 <div id="sitenews-wrap">
-	<div class="contextual bg-sitenews"><i class="fa fa-volume-up" style=""></i>
-		<div id="news-scroll-zone">
-			<div class="news-scroll-list">
-				{foreach name='top_line' item='top'}
-				<li class="sitenews-list"><a href="{:url('index/Artical/detail',['id'=>$top.id])}" target="_blank">
-					{$top.title}</a></li>
-				{/foreach}
-			</div>
-		</div>
-		<span class="infobg-close" style="color:#aaa;"><i class="fa fa-close"></i></span></div>
+    <div class="contextual bg-sitenews"><i class="fa fa-volume-up" style=""></i>
+        <div id="news-scroll-zone">
+            <div class="news-scroll-list">
+                {foreach name='top_line' item='top'}
+                <li class="sitenews-list"><a href="{:url('index/Artical/detail',['id'=>$top.id])}" target="_blank">
+                    {$top.title}</a></li>
+                {/foreach}
+            </div>
+        </div>
+        <span class="infobg-close" style="color:#aaa;"><i class="fa fa-close"></i></span></div>
 </div>
 {/block}
 {block name='content'}
-			<div id="article">
-				<div class="metro">
-					<div class="suxing_home_slider">
-						<ul id="suxingmeindexslider">
-							{foreach name='carousel' item='car'}
-							<li><a class="item" href="{:url('index/Artical/detail',['id'=>$car.id])}" target="_blank"
-							       title="{$car.title}">
-								<div class="gradient"></div>
-								<img src="{:config('webinfo.host_domain')}{:config('webinfo.qiniu_url')}{$car.photo}-hhqblog"
-								     alt="{$car.title}" title="{$car.title}"/>
-								<h2 class="title"><span>
+<div id="article">
+    <div class="metro">
+        <div class="suxing_home_slider">
+            <ul id="suxingmeindexslider">
+                {foreach name='carousel' item='car'}
+                <li><a class="item" href="{:url('index/Artical/detail',['id'=>$car.id])}" target="_blank"
+                       title="{$car.title}">
+                    <div class="gradient"></div>
+                    <img src="{:config('webinfo.host_domain')}{:config('webinfo.qiniu_url')}{$car.photo}-hhqblog"
+                         alt="{$car.title}" title="{$car.title}"/>
+                    <h2 class="title"><span>
                   {$car.title}                  </span></h2>
-							</a></li>
-							{/foreach}
-						</ul>
-					</div>
-				</div>
-				<div class="posts">
-					<script id="list-template" type="text/html">
-						{{# for(var i=0;i<d.length;i++){  }}
-					<div class="loop">
-						<div class="content-img">
-							<a href="{:config('webinfo.weburl')}ar/{{d[i].id}}" title="{{d[i].title}}">
-								<img src="{:config('webinfo.host_domain')}{:config('webinfo.qiniu_url')}{{d[i].photo}}-hhqblog" alt="{{d[i].title}}" class="thumbnail"/>
-							</a>
-							<span class="cat">
-								<a href="{:url('Artical/detail','',false)}/id/{{d[i].id}}">{{d[i].name}}</a>
+                </a></li>
+                {/foreach}
+            </ul>
+        </div>
+    </div>
+    <div class="posts list-content">
+        {foreach name='list' item='lst'}
+            <div class="loop">
+                <div class="content-img">
+                    <a href="{:config('webinfo.weburl')}ar/{$lst.id}" title="{$lst.title}">
+                        <img src="{:config('webinfo.host_domain')}{:config('webinfo.qiniu_url')}{$lst.photo}-hhqblog"
+                             alt="{$lst.title}" class="thumbnail"/>
+                    </a>
+                    <span class="cat">
+								<a href="{:url('Artical/detail','',false)}/id/{$lst.id}">{$lst.name}</a>
 							</span>
-						</div>
-						<div class="content_body">
-							<h2>
-								<a href="{:config('webinfo.weburl')}ar/{{d[i].id}}" title="{{d[i].title}}">{{d[i].title}}</a>
-							</h2>
-							<p> 导读 :
-								{{d[i].remark}}
-							</p>
-						</div>
-						<span class="title-l"></span>
-						<div class="clear"></div>
-						<div class="content_infor">
+                </div>
+                <div class="content_body">
+                    <h2>
+                        <a href="{:config('webinfo.weburl')}ar/{$lst.id}" title="{$lst.title}">{$lst.title}</a>
+                    </h2>
+                    <p> 导读 :
+                        {$lst.remark}
+                    </p>
+                </div>
+                <span class="title-l"></span>
+                <div class="clear"></div>
+                <div class="content_infor">
 							<span class="more">
-								<a href="{:config('webinfo.weburl')}ar/{{d[i].id}}"  title="阅读全文">阅读全文 <i class="fa fa-chevron-circle-right" style="font-size: 13px;"></i>
+								<a href="{:config('webinfo.weburl')}ar/{$lst.id}" title="阅读全文">阅读全文 <i
+                                        class="fa fa-chevron-circle-right" style="font-size: 13px;"></i>
 								</a>
 							</span>
-							<span class="auther">
+                    <span class="auther">
 								<a href="javascript:;" class="post-author mr15">
-									<img alt="admin" src="__IMG__/676a058a500db64d6b3acf572e1b94af.jpg" class="avatar avatar-96 photo" height="96" width="96"/>{{d[i].auth}}
+									<img alt="admin" src="__IMG__/676a058a500db64d6b3acf572e1b94af.jpg"
+                                         class="avatar avatar-96 photo" height="96" width="96"/>{$lst.auth}
 								</a>
 							</span>
-							<span><i class="fa fa-clock-o"></i> {{d[i].create_time}}
+                    <span><i class="fa fa-clock-o"></i> {$lst.create_time}
 							</span>
-							<span><i class="fa fa-eye"></i> {{d[i].views}}人参与
+                    <span><i class="fa fa-eye"></i> {$lst.views}人参与
 							</span>
-							<span> <i class="fa fa-comment"></i>
+                    <span> <i class="fa fa-comment"></i>
 									<a href="http://www.hanhqtest.com/cyzx/532.html#comments" title="评论">
 										100条评论
 									</a>
 							</span>
-							<span>
+                    <span>
 								<a title="喜欢就赞一个！" href="JavaScript:void(0)" class="favorite">
 									<i class="fa fa-thumbs-o-up" style="color:#f66"></i>
-									<span class="count" id="diggnum532">{{d[i].like}}</span>
+									<span class="count" id="diggnum532">{$lst.like}</span>
 								</a>
 							</span>
-						</div>
-					</div>
-						{{# } }}
-					</script>
-					<div id="list-content"></div>
-				</div>
-				<div id="page">
-					<div class="AjaxPage"></div>
-				</div>
-				<!-- CMS -->
-				<!--<div class="line-small">
-					<div class="xl2 xm2">
-						<div class="cat-box">
-							<h3 class="cat-title">
-								<a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
-									<i class="fa fa-th-list"></i> 创业资讯
-								</a>
-							</h3>
-							<div class="clear"></div>
-							<div class="cat-site">
-								<h2 class="entry-title">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
-									测试内容页下载功能
-									</a>
-								</h2>
-								<figure class="thumbnail">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
-										<img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
-									</a>
-								</figure>
-								<div class="cat-main">
-									测试内容页下载功能 ...
-								</div>
-								<div class="clear"></div>
-								<ul class="cat-list">
-                                    <span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
-										准备在杭州创业？这15家在杭投资机构不能错过
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
-										疯狂扩张、收缩战线，校园O2O冰火两重天
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
-										一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
-										盘点“中国特色”：67个创业项目抢食3大二手回收产业
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="xl2 xm2">
-						<div class="cat-box">
-							<h3 class="cat-title">
-								<a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
-									<i class="fa fa-th-list"></i> 创业资讯
-								</a>
-							</h3>
-							<div class="clear"></div>
-							<div class="cat-site">
-								<h2 class="entry-title">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
-										测试内容页下载功能
-									</a>
-								</h2>
-								<figure class="thumbnail">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
-										<img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
-									</a>
-								</figure>
-								<div class="cat-main">
-									测试内容页下载功能 ...
-								</div>
-								<div class="clear"></div>
-								<ul class="cat-list">
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
-											准备在杭州创业？这15家在杭投资机构不能错过
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
-											疯狂扩张、收缩战线，校园O2O冰火两重天
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
-											一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
-											盘点“中国特色”：67个创业项目抢食3大二手回收产业
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="xl2 xm2">
-						<div class="cat-box">
-							<h3 class="cat-title">
-								<a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
-									<i class="fa fa-th-list"></i> 创业资讯
-								</a>
-							</h3>
-							<div class="clear"></div>
-							<div class="cat-site">
-								<h2 class="entry-title">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
-										测试内容页下载功能
-									</a>
-								</h2>
-								<figure class="thumbnail">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
-										<img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
-									</a>
-								</figure>
-								<div class="cat-main">
-									测试内容页下载功能 ...
-								</div>
-								<div class="clear"></div>
-								<ul class="cat-list">
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
-											准备在杭州创业？这15家在杭投资机构不能错过
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
-											疯狂扩张、收缩战线，校园O2O冰火两重天
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
-											一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
-											盘点“中国特色”：67个创业项目抢食3大二手回收产业
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="xl2 xm2">
-						<div class="cat-box">
-							<h3 class="cat-title">
-								<a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
-									<i class="fa fa-th-list"></i> 创业资讯
-								</a>
-							</h3>
-							<div class="clear"></div>
-							<div class="cat-site">
-								<h2 class="entry-title">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
-										测试内容页下载功能
-									</a>
-								</h2>
-								<figure class="thumbnail">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
-										<img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
-									</a>
-								</figure>
-								<div class="cat-main">
-									测试内容页下载功能 ...
-								</div>
-								<div class="clear"></div>
-								<ul class="cat-list">
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
-											准备在杭州创业？这15家在杭投资机构不能错过
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
-											疯狂扩张、收缩战线，校园O2O冰火两重天
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
-											一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
-											盘点“中国特色”：67个创业项目抢食3大二手回收产业
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="xl2 xm2">
-						<div class="cat-box">
-							<h3 class="cat-title">
-								<a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
-									<i class="fa fa-th-list"></i> 创业资讯
-								</a>
-							</h3>
-							<div class="clear"></div>
-							<div class="cat-site">
-								<h2 class="entry-title">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
-										测试内容页下载功能
-									</a>
-								</h2>
-								<figure class="thumbnail">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
-										<img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
-									</a>
-								</figure>
-								<div class="cat-main">
-									测试内容页下载功能 ...
-								</div>
-								<div class="clear"></div>
-								<ul class="cat-list">
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
-											准备在杭州创业？这15家在杭投资机构不能错过
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
-											疯狂扩张、收缩战线，校园O2O冰火两重天
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
-											一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
-											盘点“中国特色”：67个创业项目抢食3大二手回收产业
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="xl2 xm2">
-						<div class="cat-box">
-							<h3 class="cat-title">
-								<a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
-									<i class="fa fa-th-list"></i> 创业资讯
-								</a>
-							</h3>
-							<div class="clear"></div>
-							<div class="cat-site">
-								<h2 class="entry-title">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
-										测试内容页下载功能
-									</a>
-								</h2>
-								<figure class="thumbnail">
-									<a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
-										<img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
-									</a>
-								</figure>
-								<div class="cat-main">
-									测试内容页下载功能 ...
-								</div>
-								<div class="clear"></div>
-								<ul class="cat-list">
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
-											准备在杭州创业？这15家在杭投资机构不能错过
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
-											疯狂扩张、收缩战线，校园O2O冰火两重天
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
-											一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
-										</a>
-									</li>
-									<span class="list-date"> 01/01</span>
-									<li class="list-title">
-										<i class="fa fa-angle-right"></i>
-										<a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
-											盘点“中国特色”：67个创业项目抢食3大二手回收产业
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>-->
-			</div>
+                </div>
+            </div>
+           {/foreach}
+        <div id="list-content"></div>
+    </div>
+    <div id="page">
+        <div class="AjaxPage"></div>
+    </div>
+    <!-- CMS -->
+    <!--<div class="line-small">
+        <div class="xl2 xm2">
+            <div class="cat-box">
+                <h3 class="cat-title">
+                    <a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
+                        <i class="fa fa-th-list"></i> 创业资讯
+                    </a>
+                </h3>
+                <div class="clear"></div>
+                <div class="cat-site">
+                    <h2 class="entry-title">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
+                        测试内容页下载功能
+                        </a>
+                    </h2>
+                    <figure class="thumbnail">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
+                            <img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
+                        </a>
+                    </figure>
+                    <div class="cat-main">
+                        测试内容页下载功能 ...
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="cat-list">
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
+                            准备在杭州创业？这15家在杭投资机构不能错过
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
+                            疯狂扩张、收缩战线，校园O2O冰火两重天
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
+                            一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
+                            盘点“中国特色”：67个创业项目抢食3大二手回收产业
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xl2 xm2">
+            <div class="cat-box">
+                <h3 class="cat-title">
+                    <a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
+                        <i class="fa fa-th-list"></i> 创业资讯
+                    </a>
+                </h3>
+                <div class="clear"></div>
+                <div class="cat-site">
+                    <h2 class="entry-title">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
+                            测试内容页下载功能
+                        </a>
+                    </h2>
+                    <figure class="thumbnail">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
+                            <img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
+                        </a>
+                    </figure>
+                    <div class="cat-main">
+                        测试内容页下载功能 ...
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="cat-list">
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
+                                准备在杭州创业？这15家在杭投资机构不能错过
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
+                                疯狂扩张、收缩战线，校园O2O冰火两重天
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
+                                一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
+                                盘点“中国特色”：67个创业项目抢食3大二手回收产业
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xl2 xm2">
+            <div class="cat-box">
+                <h3 class="cat-title">
+                    <a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
+                        <i class="fa fa-th-list"></i> 创业资讯
+                    </a>
+                </h3>
+                <div class="clear"></div>
+                <div class="cat-site">
+                    <h2 class="entry-title">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
+                            测试内容页下载功能
+                        </a>
+                    </h2>
+                    <figure class="thumbnail">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
+                            <img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
+                        </a>
+                    </figure>
+                    <div class="cat-main">
+                        测试内容页下载功能 ...
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="cat-list">
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
+                                准备在杭州创业？这15家在杭投资机构不能错过
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
+                                疯狂扩张、收缩战线，校园O2O冰火两重天
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
+                                一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
+                                盘点“中国特色”：67个创业项目抢食3大二手回收产业
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xl2 xm2">
+            <div class="cat-box">
+                <h3 class="cat-title">
+                    <a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
+                        <i class="fa fa-th-list"></i> 创业资讯
+                    </a>
+                </h3>
+                <div class="clear"></div>
+                <div class="cat-site">
+                    <h2 class="entry-title">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
+                            测试内容页下载功能
+                        </a>
+                    </h2>
+                    <figure class="thumbnail">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
+                            <img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
+                        </a>
+                    </figure>
+                    <div class="cat-main">
+                        测试内容页下载功能 ...
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="cat-list">
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
+                                准备在杭州创业？这15家在杭投资机构不能错过
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
+                                疯狂扩张、收缩战线，校园O2O冰火两重天
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
+                                一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
+                                盘点“中国特色”：67个创业项目抢食3大二手回收产业
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xl2 xm2">
+            <div class="cat-box">
+                <h3 class="cat-title">
+                    <a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
+                        <i class="fa fa-th-list"></i> 创业资讯
+                    </a>
+                </h3>
+                <div class="clear"></div>
+                <div class="cat-site">
+                    <h2 class="entry-title">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
+                            测试内容页下载功能
+                        </a>
+                    </h2>
+                    <figure class="thumbnail">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
+                            <img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
+                        </a>
+                    </figure>
+                    <div class="cat-main">
+                        测试内容页下载功能 ...
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="cat-list">
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
+                                准备在杭州创业？这15家在杭投资机构不能错过
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
+                                疯狂扩张、收缩战线，校园O2O冰火两重天
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
+                                一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
+                                盘点“中国特色”：67个创业项目抢食3大二手回收产业
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="xl2 xm2">
+            <div class="cat-box">
+                <h3 class="cat-title">
+                    <a href="http://www.hanhqtest.com/cyzx/" title="创业资讯">
+                        <i class="fa fa-th-list"></i> 创业资讯
+                    </a>
+                </h3>
+                <div class="clear"></div>
+                <div class="cat-site">
+                    <h2 class="entry-title">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" rel="bookmark">
+                            测试内容页下载功能
+                        </a>
+                    </h2>
+                    <figure class="thumbnail">
+                        <a href="http://www.hanhqtest.com/cyzx/2016-10-24/540.html" title="测试内容页下载功能">
+                            <img src="__IMG__/3c1cfafbca8ef890f0e90b1475d234ff.jpg" alt="测试内容页下载功能" class="thumbnail"/>
+                        </a>
+                    </figure>
+                    <div class="cat-main">
+                        测试内容页下载功能 ...
+                    </div>
+                    <div class="clear"></div>
+                    <ul class="cat-list">
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/535.html" rel="bookmark">
+                                准备在杭州创业？这15家在杭投资机构不能错过
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/532.html" rel="bookmark">
+                                疯狂扩张、收缩战线，校园O2O冰火两重天
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/534.html" rel="bookmark">
+                                一个草根微商暴富梦破：几个月8万亏一半 重回工厂打工
+                            </a>
+                        </li>
+                        <span class="list-date"> 01/01</span>
+                        <li class="list-title">
+                            <i class="fa fa-angle-right"></i>
+                            <a href="http://www.hanhqtest.com/cyzx/533.html" rel="bookmark">
+                                盘点“中国特色”：67个创业项目抢食3大二手回收产业
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>-->
+</div>
 {/block}
 <!-- wrapper over -->
 {block name='js'}
 <script type="text/javascript" src="__JS__/responsiveslides.min.js"></script>
 <script>
-	$(function(){
+    $(function () {
         $('#suxingmeindexslider').responsiveSlides({
             pager: true,
             nav: true,
             namespace: 'centered-btns'
         });
-	    ajax_page();
-	});
+    });
+    laypage({
+        cont: $('.AjaxPage'),//容器。值支持id名、原生dom对象，jquery对象,
+        pages: '{$allpage}',//总页数
+        skip: true,//是否开启跳页
+        skin: '#32a5e7',//分页组件颜色
+        allpage: true,
+        groups: 5,//连续显示分页数
+        jump: function (obj, first) {
+            if (!first) {
+                ajax_page(obj.curr)
+            }
+        }
+    });
     //以下将以jquery.ajax为例，演示一个异步分页
-    function ajax_page(curr,cat) {
-        $.getJSON('', {
-            page: curr || 1,c: "{:input('c')}" || ''
-        }, function (data) {      //data是后台返回过来的JSON数据
-                var tpl = document.getElementById('list-template').innerHTML;
-                laytpl(tpl).render(data, function (html) {
-                    document.getElementById('list-content').innerHTML = html;
-                });
-                laypage({
-                    cont: $('.AjaxPage'),//容器。值支持id名、原生dom对象，jquery对象,
-                    pages: '{$allpage}',//总页数
-                    skip: true,//是否开启跳页
-                    skin: '#32a5e7',//分页组件颜色
-                    curr: curr || 1,
-					c:"{:input('c')}" || '',
-					allpage:true,
-                    groups: 5,//连续显示分页数
-                    jump: function (obj, first) {
-                        if (!first) {
-                            ajax_page(obj.curr)
-                        }
-                    }
-                });
+    function ajax_page(curr) {
+        $.ajax({
+            type:'GET',
+            url:'',
+            data:{page:curr || 1},
+            success:function(data){
+                $('.list-content').empty().html(data);
+            }
         });
     }
 </script>

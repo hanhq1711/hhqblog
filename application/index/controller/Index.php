@@ -31,7 +31,7 @@ class Index extends Base
 			$where['cate_id'] = $cat;
 		}
 		$count = model('Article')->where($where)->count();
-		$pageSize = 15;
+		$pageSize = 10;
 		$allpage = (int)ceil($count/$pageSize);
 		$list = model('Article')->useGlobalScope(false)->alias('a')->where($map)->order('id desc')->join('__ARTICLE_CATE__ ac','a.cate_id=ac.id','left')->page($page,$pageSize)->field('a.*,ac.name')->select();
 		
@@ -42,22 +42,7 @@ class Index extends Base
 			'top_line'=>$top_line,
 			'carousel'=>$carousel,
 		]);
-		if (input('page')) return json($list);
+		if (input('page')) return $this->fetch('ajax_index');
     	return $this->fetch();
     }
-    /**
-	 * ajax获取文章列表
-	 */
-    public function ajax_index()
-	{
-		$map = ['status'=>1];
-		if(!empty(input('c'))) $map['cat_id'] = input('c');
-		$count = model('Article')->where($map)->count();
-		$pageSize = 10;
-		$allpage = (int)ceil($count/$pageSize);
-		$list = model('Article')->useGlobalScope(false)->alias('a')->where($map)->order('id desc')->join('__ARTICLE_CATE__ ac','a.cate_id=ac.id')->field('a.*,ac.name')->select();
-		$this->assign('list',$list);
-		$this->assign('allpage',$allpage);
-		return json($list);
-	}
 }
