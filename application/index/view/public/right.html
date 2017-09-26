@@ -1,20 +1,20 @@
 <div id="sidebar-right">
-	<!-- <div class="sidebox widget_vfilm_search">
+	 <div class="sidebox widget_vfilm_search">
 		<form onsubmit="return checkSearchForm()" method="post" name="searchform" class="search-form"
-		      id="search-formhybrid-search" action="http://www.hhqblog.com/e/search/index.php">
+		      id="search-formhybrid-search" action="{:config('webinfo.weburl')}">
 			<div class="search-input">
 				<b class="search-liaosheji" style="height: 0px; top: 0px;"></b>
-				<input class="search-text" placeholder="要不找一找？" type="text" name="keyboard"
+				<input class="search-text" placeholder="要不找一找？" type="text" name="keyword"
 				       id="search-texthybrid-search" value=""
 				       onfocus="if(this.value==this.defaultValue)this.value='';"
 				       onblur="if(this.value=='')this.value=this.defaultValue;">
 				<input type="submit" value="　" class="search-button">
 			</div>
-			<input type="hidden" value="title" name="show">
+			<!--<input type="hidden" value="title" name="show">
 			<input type="hidden" value="1" name="tempid">
 			<input type="hidden" value="news" name="tbname">
 			<input name="mid" value="1" type="hidden">
-			<input name="dopost" value="search" type="hidden">
+			<input name="dopost" value="search" type="hidden">-->
 		</form>
 		<script type="text/javascript">
 	            jQuery(".search-input .search-text").bind('focus', function () {
@@ -24,9 +24,9 @@
 	                jQuery(".search-input .search-liaosheji").animate({height: 0, top: 0})
 	            })
 		</script>
-	</div> -->
+	</div>
 	<!--搜索-->
-	<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=3985469976436119383' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+	<!--<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=3985469976436119383' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>-->
 	<!--搜索end-->
 	<div class="sidebox widget_authorinfo">
 		<div class="author-info">

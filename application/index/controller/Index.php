@@ -25,12 +25,12 @@ class Index extends Base
 		$page = input('page',1);
 		$cat = input('c','');
 		$keword = input('keyword','');
-		if (!empty($keword)){
-			$map['a.title'] = array('like',"%$keword&");
-			$where['title'] = array('like',"%$keword&");
-		}
 		$map = ['a.status'=>1];
 		$where = ['status'=>1];
+		if (!empty($keword)){
+			$map['a.title'] = array('like',"%$keword%");
+			$where['title'] = array('like',"%$keword%");
+		}
 		if (!empty($cat)) {
 			$map['a.cate_id'] = $cat;
 			$where['cate_id'] = $cat;
@@ -39,7 +39,6 @@ class Index extends Base
 		$pageSize = 10;
 		$allpage = (int)ceil($count/$pageSize);
 		$list = model('Article')->useGlobalScope(false)->alias('a')->where($map)->order('id desc')->join('__ARTICLE_CATE__ ac','a.cate_id=ac.id','left')->page($page,$pageSize)->field('a.*,ac.name')->select();
-		
 		$this->assign('list',$list);
 		$this->assign('allpage',$allpage);
 		

@@ -459,7 +459,7 @@
         $.ajax({
             type:'GET',
             url:'',
-            data:{page:curr || 1},
+            data:{page:curr || 1,keyword:"{:input('keyword')}"|| ''},
             success:function(data){
                 $('.list-content').empty().html(data);
             }
