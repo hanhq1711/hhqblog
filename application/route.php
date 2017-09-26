@@ -19,4 +19,5 @@ return [
 		':name' => ['index/hello', ['method' => 'post']],
 	],*/
 	'ar/:id'   => 'index/Artical/detail',
+	'cat/:c'   => 'index/Index/index',
 ];

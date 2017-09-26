@@ -7,7 +7,7 @@
 return [
 	'host_domain'     =>'http://',
 	'web_site_title'  =>'韩会强博客后台管理',
-	'weburl'          => 'http://www.hhqblog.com/',
+	'weburl'          => 'http://hhqblog.com/',
 	'webqq'           => '1125544134',
 	'webwechat'       => '15064121660',
 	'webali'          => 'hhq1711@163.com',

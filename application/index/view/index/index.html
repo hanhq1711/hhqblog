@@ -443,7 +443,7 @@
 	});
     //以下将以jquery.ajax为例，演示一个异步分页
     function ajax_page(curr,cat) {
-        $.getJSON('{:url("Index/index")}', {
+        $.getJSON('', {
             page: curr || 1,c: "{:input('c')}" || ''
         }, function (data) {      //data是后台返回过来的JSON数据
                 var tpl = document.getElementById('list-template').innerHTML;

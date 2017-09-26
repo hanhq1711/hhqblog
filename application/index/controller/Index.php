@@ -23,8 +23,14 @@ class Index extends Base
 		}
 		//读取文章列表
 		$page = input('page',1);
+		$cat = input('c','');
 		$map = ['a.status'=>1];
-		$count = model('Article')->count();
+		$where = ['status'=>1];
+		if (!empty($cat)) {
+			$map['a.cate_id'] = $cat;
+			$where['cate_id'] = $cat;
+		}
+		$count = model('Article')->where($where)->count();
 		$pageSize = 15;
 		$allpage = (int)ceil($count/$pageSize);
 		$list = model('Article')->useGlobalScope(false)->alias('a')->where($map)->order('id desc')->join('__ARTICLE_CATE__ ac','a.cate_id=ac.id','left')->page($page,$pageSize)->field('a.*,ac.name')->select();
