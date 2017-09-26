@@ -24,6 +24,11 @@ class Index extends Base
 		//读取文章列表
 		$page = input('page',1);
 		$cat = input('c','');
+		$keword = input('keyword','');
+		if (!empty($keword)){
+			$map['a.title'] = array('like',"%$keword&");
+			$where['title'] = array('like',"%$keword&");
+		}
 		$map = ['a.status'=>1];
 		$where = ['status'=>1];
 		if (!empty($cat)) {
