@@ -20,7 +20,7 @@
 						<ul id="suxingmeindexslider">
 							{foreach name='carousel' item='car'}
 							<li><a class="item" href="{:url('index/Artical/detail',['id'=>$car.id])}" target="_blank"
-							       title="疯狂扩张、收缩战线，校园O2O冰火两重天">
+							       title="{$car.title}">
 								<div class="gradient"></div>
 								<img src="{:config('webinfo.host_domain')}{:config('webinfo.qiniu_url')}{$car.photo}-hhqblog"
 								     alt="{$car.title}" title="{$car.title}"/>
