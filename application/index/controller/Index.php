@@ -45,7 +45,8 @@ class Index extends Base
     public function ajax_index()
 	{
 		$map = ['status'=>1];
-		$count = model('Article')->count();
+		if(!empty(input('c'))) $map['cat_id'] = input('c');
+		$count = model('Article')->where($map)->count();
 		$pageSize = 10;
 		$allpage = (int)ceil($count/$pageSize);
 		$list = model('Article')->useGlobalScope(false)->alias('a')->where($map)->order('id desc')->join('__ARTICLE_CATE__ ac','a.cate_id=ac.id')->field('a.*,ac.name')->select();

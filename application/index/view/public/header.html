@@ -80,13 +80,13 @@
 				<li class="current-menu-item"><a href="{:config('webinfo.weburl')}">首页</a></li>
 				{foreach name='menu' item='cate'}
 				{if condition="empty($cate['child'])"}
-				<li><a href="{:url('Index/index',array('cate_id'=>$cate['id']))}" title="{$cate['name']}">{$cate['name']}</a></li>
+				<li><a href="{:url('Index/index',array('c'=>$cate['id']))}" title="{$cate['name']}">{$cate['name']}</a></li>
 				{else /}
 				<li class="menu-item-has-children submenu "><a href="javascript:;"
 															   title="{$cate['name']}">{$cate['name']}</a><span class="sign "></span>
 					<ul class="sub-menu">
 						{foreach name='cate.child' item='sub_cate'}
-						<li><a href="{:url('Index/index',array('cate_id'=>$sub_cate['id']))}" title="{$sub_cate['name']}">{$sub_cate['name']}</a></li>
+						<li><a href="{:url('Index/index',array('c'=>$sub_cate['id']))}" title="{$sub_cate['name']}">{$sub_cate['name']}</a></li>
 						{/foreach}
 					</ul>
 				</li>
@@ -112,10 +112,10 @@
 		<li class="current-menu-item"><a href="/">首页</a></li>
 		{foreach name='menu' item='min_cate'}
 		{if condition="empty($min_cate['child'])"}
-		<li><a href="{:url('Index/index',array('cate_id'=>$min_cate['id']))}" title="{$min_cate['name']}">{$min_cate['name']}</a></li>
+		<li><a href="{:url('Index/index',array('c'=>$min_cate['id']))}" title="{$min_cate['name']}">{$min_cate['name']}</a></li>
 		{else /}
 				{foreach name='min_cate.child' item='min_sub_cate'}
-				<li><a href="{:url('Index/index',array('cate_id'=>$min_sub_cate['id']))}" title="{$min_sub_cate['name']}">{$min_sub_cate['name']}</a></li>
+				<li><a href="{:url('Index/index',array('c'=>$min_sub_cate['id']))}" title="{$min_sub_cate['name']}">{$min_sub_cate['name']}</a></li>
 				{/foreach}
 		{/if}
 		{/foreach}
