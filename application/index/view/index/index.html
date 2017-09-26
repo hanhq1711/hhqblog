@@ -442,9 +442,9 @@
 	    ajax_page();
 	});
     //以下将以jquery.ajax为例，演示一个异步分页
-    function ajax_page(curr) {
+    function ajax_page(curr,cat) {
         $.getJSON('{:url("Index/index")}', {
-            page: curr || 1
+            page: curr || 1,c: "{:input('c')}" || ''
         }, function (data) {      //data是后台返回过来的JSON数据
                 var tpl = document.getElementById('list-template').innerHTML;
                 laytpl(tpl).render(data, function (html) {
@@ -456,6 +456,7 @@
                     skip: true,//是否开启跳页
                     skin: '#32a5e7',//分页组件颜色
                     curr: curr || 1,
+					c:"{:input('c')}" || '',
 					allpage:true,
                     groups: 5,//连续显示分页数
                     jump: function (obj, first) {
